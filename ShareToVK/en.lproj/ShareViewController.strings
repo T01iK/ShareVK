@@ -1,0 +1,30 @@
+
+/* Class = "NSTextFieldCell"; title = "ShareVK"; ObjectID = "0xp-rC-2gr"; */
+"0xp-rC-2gr.title" = "ShareVK";
+
+/* Class = "NSButtonCell"; title = "Отправить"; ObjectID = "2l4-PO-we5"; */
+"2l4-PO-we5.title" = "Send";
+
+/* Class = "NSButtonCell"; title = "Отменить"; ObjectID = "6Up-t3-mwm"; */
+"6Up-t3-mwm.title" = "Cancel";
+
+/* Class = "NSButtonCell"; title = "Подписчики сообщества"; ObjectID = "A6i-Pn-Da1"; */
+"A6i-Pn-Da1.title" = "Подписчики сообщества";
+
+/* Class = "NSButtonCell"; title = "Друзья и подписчики"; ObjectID = "Br4-Oa-Bs5"; */
+"Br4-Oa-Bs5.title" = "Друзья и подписчики";
+
+/* Class = "NSTextFieldCell"; title = "Выберите аудиторию"; ObjectID = "GRE-Zy-fP5"; */
+"GRE-Zy-fP5.title" = "Выберите аудиторию";
+
+/* Class = "NSButtonCell"; title = "Отправить личным сообщением"; ObjectID = "XnX-81-TqY"; */
+"XnX-81-TqY.title" = "Отправить личным сообщением";
+
+/* Class = "NSButtonCell"; title = "Только для друзей"; ObjectID = "ccJ-Br-qqR"; */
+"ccJ-Br-qqR.title" = "Только для друзей";
+
+/* Class = "NSTextFieldCell"; title = "Ваш комментарий"; ObjectID = "edK-YT-iUM"; */
+"edK-YT-iUM.title" = "Ваш комментарий";
+
+/* Class = "NSTokenFieldCell"; placeholderString = "Получатели или сообщества"; ObjectID = "rzF-fc-jeK"; */
+"rzF-fc-jeK.placeholderString" = "Получатели или сообщества";

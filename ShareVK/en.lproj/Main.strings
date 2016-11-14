@@ -1,0 +1,51 @@
+
+/* Class = "NSMenuItem"; title = "ShareVK"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "ShareVK";
+
+/* Class = "NSMenuItem"; title = "Quit ShareVK"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit ShareVK";
+
+/* Class = "NSMenuItem"; title = "About ShareVK"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About ShareVK";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "Preferences…";
+
+/* Class = "NSWindow"; title = "ShareVK"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "ShareVK";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "Bring All to Front";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Minimize";
+
+/* Class = "NSMenuItem"; title = "Hide ShareVK"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Hide ShareVK";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Hide Others";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Window";
+
+/* Class = "NSTextFieldCell"; title = "Чтобы включить расширение, перейдите в Системные настройки вашего Mac, раздел \"Расширения\" и поставьте галочку рядом с приложением ShareVK"; ObjectID = "fe3-LV-GWO"; */
+"fe3-LV-GWO.title" = "To turn on the share extension, open System preferences of your Mac, find \"Extensions\" and turn on ShareVK";
+
+/* Class = "NSButtonCell"; title = "Войти во ВКонтакте"; ObjectID = "rkk-5j-hMi"; */
+"rkk-5j-hMi.title" = "Login to VK";
+
+/* Class = "NSMenu"; title = "ShareVK"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "ShareVK";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Help";

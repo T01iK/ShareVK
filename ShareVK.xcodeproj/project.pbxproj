@@ -1,0 +1,857 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9813DA4B1DCB069B00CF8947 /* bgcolor.png in Resources */ = {isa = PBXBuildFile; fileRef = 9813DA4A1DCB069B00CF8947 /* bgcolor.png */; };
+		9849B83B1DD7939300BD654A /* docLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9849B83A1DD7939300BD654A /* docLogo.png */; };
+		984AA0CB1DC2DB640039E04E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984AA0CA1DC2DB640039E04E /* AppDelegate.swift */; };
+		984AA0CD1DC2DB640039E04E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984AA0CC1DC2DB640039E04E /* ViewController.swift */; };
+		984AA0CF1DC2DB640039E04E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984AA0CE1DC2DB640039E04E /* Assets.xcassets */; };
+		984AA0D21DC2DB640039E04E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984AA0D01DC2DB640039E04E /* Main.storyboard */; };
+		984AA0DD1DC2DB640039E04E /* ShareVKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984AA0DC1DC2DB640039E04E /* ShareVKTests.swift */; };
+		984AA0E81DC2DB640039E04E /* ShareVKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984AA0E71DC2DB640039E04E /* ShareVKUITests.swift */; };
+		984AA1041DC2DC4D0039E04E /* SwiftyVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984AA0FD1DC2DC1E0039E04E /* SwiftyVK.framework */; };
+		984AA1051DC2DC4D0039E04E /* SwiftyVK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 984AA0FD1DC2DC1E0039E04E /* SwiftyVK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		984AA10A1DC2DCBA0039E04E /* VKDelegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984AA1091DC2DCBA0039E04E /* VKDelegation.swift */; };
+		984DFD271DD8E64F004B7584 /* musicLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 984DFD261DD8E64F004B7584 /* musicLogo.png */; };
+		984DFD2C1DD8F864004B7584 /* gifLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 984DFD2B1DD8F864004B7584 /* gifLogo.png */; };
+		98663F981DD5664D00E27325 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 98663F971DD5664D00E27325 /* icon.icns */; };
+		989594881DC73A1D00AF6AFA /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989594871DC73A1D00AF6AFA /* ShareViewController.swift */; };
+		9895948B1DC73A1D00AF6AFA /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989594891DC73A1D00AF6AFA /* ShareViewController.xib */; };
+		9895948F1DC73A1D00AF6AFA /* ShareToVK.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 989594811DC73A1D00AF6AFA /* ShareToVK.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		989594981DC73A8800AF6AFA /* VKDelegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989594971DC73A8800AF6AFA /* VKDelegation.swift */; };
+		98BBD5B71DD4FF2000505CAD /* SwiftyVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984AA0FD1DC2DC1E0039E04E /* SwiftyVK.framework */; };
+		98E58E431DCB1B0200F7749C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989594871DC73A1D00AF6AFA /* ShareViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		984AA0D91DC2DB640039E04E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 984AA0BF1DC2DB640039E04E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 984AA0C61DC2DB640039E04E;
+			remoteInfo = ShareVK;
+		};
+		984AA0E41DC2DB640039E04E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 984AA0BF1DC2DB640039E04E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 984AA0C61DC2DB640039E04E;
+			remoteInfo = ShareVK;
+		};
+		984AA0FC1DC2DC1E0039E04E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 984AA0F51DC2DC1E0039E04E /* SwiftyVK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A2EB6EA81BD180E9008E7D86;
+			remoteInfo = "SwiftyVK-OSX";
+		};
+		984AA0FE1DC2DC1E0039E04E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 984AA0F51DC2DC1E0039E04E /* SwiftyVK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A2EB6E9B1BD180DD008E7D86;
+			remoteInfo = "SwiftyVK-iOS";
+		};
+		984AA1001DC2DC1E0039E04E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 984AA0F51DC2DC1E0039E04E /* SwiftyVK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A2527D4B1BD1130D00F65412;
+			remoteInfo = "SwiftyVKResources-OSX";
+		};
+		984AA1021DC2DC1E0039E04E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 984AA0F51DC2DC1E0039E04E /* SwiftyVK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A2527D551BD1134500F65412;
+			remoteInfo = "SwiftyVKResources-iOS";
+		};
+		984AA1061DC2DC4D0039E04E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 984AA0F51DC2DC1E0039E04E /* SwiftyVK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A2EB6EA71BD180E9008E7D86;
+			remoteInfo = "SwiftyVK-OSX";
+		};
+		9895948D1DC73A1D00AF6AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 984AA0BF1DC2DB640039E04E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 989594801DC73A1D00AF6AFA;
+			remoteInfo = ShareToVK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		984AA1081DC2DC4D0039E04E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				984AA1051DC2DC4D0039E04E /* SwiftyVK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984AA11E1DC2EA7C0039E04E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9895948F1DC73A1D00AF6AFA /* ShareToVK.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9813DA461DC8FCE900CF8947 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/ShareViewController.strings; sourceTree = "<group>"; };
+		9813DA481DC8FD1500CF8947 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ShareViewController.strings; sourceTree = "<group>"; };
+		9813DA4A1DCB069B00CF8947 /* bgcolor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgcolor.png; sourceTree = "<group>"; };
+		9849B83A1DD7939300BD654A /* docLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = docLogo.png; sourceTree = "<group>"; };
+		984AA0C71DC2DB640039E04E /* ShareVK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareVK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		984AA0CA1DC2DB640039E04E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		984AA0CC1DC2DB640039E04E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		984AA0CE1DC2DB640039E04E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		984AA0D11DC2DB640039E04E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		984AA0D31DC2DB640039E04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		984AA0D81DC2DB640039E04E /* ShareVKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareVKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		984AA0DC1DC2DB640039E04E /* ShareVKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareVKTests.swift; sourceTree = "<group>"; };
+		984AA0DE1DC2DB640039E04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		984AA0E31DC2DB640039E04E /* ShareVKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareVKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		984AA0E71DC2DB640039E04E /* ShareVKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareVKUITests.swift; sourceTree = "<group>"; };
+		984AA0E91DC2DB640039E04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		984AA0F51DC2DC1E0039E04E /* SwiftyVK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyVK.xcodeproj; path = ../../SwiftyVK/Library/SwiftyVK.xcodeproj; sourceTree = "<group>"; };
+		984AA1091DC2DCBA0039E04E /* VKDelegation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKDelegation.swift; sourceTree = "<group>"; };
+		984AA1391DC2EF680039E04E /* ShareVK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareVK.entitlements; sourceTree = "<group>"; };
+		984DFD261DD8E64F004B7584 /* musicLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicLogo.png; sourceTree = "<group>"; };
+		984DFD2B1DD8F864004B7584 /* gifLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gifLogo.png; sourceTree = "<group>"; };
+		98663F971DD5664D00E27325 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		98663F9A1DD569DA00E27325 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		98663F9C1DD569EA00E27325 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		989594811DC73A1D00AF6AFA /* ShareToVK.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareToVK.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		989594861DC73A1D00AF6AFA /* ShareToVK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareToVK.entitlements; sourceTree = "<group>"; };
+		989594871DC73A1D00AF6AFA /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		9895948A1DC73A1D00AF6AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
+		9895948C1DC73A1D00AF6AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		989594971DC73A8800AF6AFA /* VKDelegation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKDelegation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		984AA0C41DC2DB640039E04E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984AA1041DC2DC4D0039E04E /* SwiftyVK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984AA0D51DC2DB640039E04E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984AA0E01DC2DB640039E04E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9895947E1DC73A1D00AF6AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98BBD5B71DD4FF2000505CAD /* SwiftyVK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		984AA0BE1DC2DB640039E04E = {
+			isa = PBXGroup;
+			children = (
+				984AA0C91DC2DB640039E04E /* ShareVK */,
+				984AA0DB1DC2DB640039E04E /* ShareVKTests */,
+				984AA0E61DC2DB640039E04E /* ShareVKUITests */,
+				989594821DC73A1D00AF6AFA /* ShareToVK */,
+				984AA0C81DC2DB640039E04E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		984AA0C81DC2DB640039E04E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				984AA0C71DC2DB640039E04E /* ShareVK.app */,
+				984AA0D81DC2DB640039E04E /* ShareVKTests.xctest */,
+				984AA0E31DC2DB640039E04E /* ShareVKUITests.xctest */,
+				989594811DC73A1D00AF6AFA /* ShareToVK.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		984AA0C91DC2DB640039E04E /* ShareVK */ = {
+			isa = PBXGroup;
+			children = (
+				984AA1391DC2EF680039E04E /* ShareVK.entitlements */,
+				984AA0CA1DC2DB640039E04E /* AppDelegate.swift */,
+				984AA0CC1DC2DB640039E04E /* ViewController.swift */,
+				984AA1091DC2DCBA0039E04E /* VKDelegation.swift */,
+				984AA0CE1DC2DB640039E04E /* Assets.xcassets */,
+				984AA0D01DC2DB640039E04E /* Main.storyboard */,
+				984AA0D31DC2DB640039E04E /* Info.plist */,
+				984AA0F51DC2DC1E0039E04E /* SwiftyVK.xcodeproj */,
+			);
+			path = ShareVK;
+			sourceTree = "<group>";
+		};
+		984AA0DB1DC2DB640039E04E /* ShareVKTests */ = {
+			isa = PBXGroup;
+			children = (
+				984AA0DC1DC2DB640039E04E /* ShareVKTests.swift */,
+				984AA0DE1DC2DB640039E04E /* Info.plist */,
+			);
+			path = ShareVKTests;
+			sourceTree = "<group>";
+		};
+		984AA0E61DC2DB640039E04E /* ShareVKUITests */ = {
+			isa = PBXGroup;
+			children = (
+				984AA0E71DC2DB640039E04E /* ShareVKUITests.swift */,
+				984AA0E91DC2DB640039E04E /* Info.plist */,
+			);
+			path = ShareVKUITests;
+			sourceTree = "<group>";
+		};
+		984AA0F61DC2DC1E0039E04E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				984AA0FD1DC2DC1E0039E04E /* SwiftyVK.framework */,
+				984AA0FF1DC2DC1E0039E04E /* SwiftyVK.framework */,
+				984AA1011DC2DC1E0039E04E /* SwiftyVKResources-OSX.bundle */,
+				984AA1031DC2DC1E0039E04E /* SwiftyVKResources-iOS.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		989594821DC73A1D00AF6AFA /* ShareToVK */ = {
+			isa = PBXGroup;
+			children = (
+				989594971DC73A8800AF6AFA /* VKDelegation.swift */,
+				989594871DC73A1D00AF6AFA /* ShareViewController.swift */,
+				989594891DC73A1D00AF6AFA /* ShareViewController.xib */,
+				9895948C1DC73A1D00AF6AFA /* Info.plist */,
+				989594831DC73A1D00AF6AFA /* Supporting Files */,
+			);
+			path = ShareToVK;
+			sourceTree = "<group>";
+		};
+		989594831DC73A1D00AF6AFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98663F971DD5664D00E27325 /* icon.icns */,
+				9813DA4A1DCB069B00CF8947 /* bgcolor.png */,
+				984DFD261DD8E64F004B7584 /* musicLogo.png */,
+				984DFD2B1DD8F864004B7584 /* gifLogo.png */,
+				9849B83A1DD7939300BD654A /* docLogo.png */,
+				989594861DC73A1D00AF6AFA /* ShareToVK.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		984AA0C61DC2DB640039E04E /* ShareVK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 984AA0EC1DC2DB640039E04E /* Build configuration list for PBXNativeTarget "ShareVK" */;
+			buildPhases = (
+				984AA0C31DC2DB640039E04E /* Sources */,
+				984AA0C41DC2DB640039E04E /* Frameworks */,
+				984AA0C51DC2DB640039E04E /* Resources */,
+				984AA1081DC2DC4D0039E04E /* Embed Frameworks */,
+				984AA11E1DC2EA7C0039E04E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				984AA1071DC2DC4D0039E04E /* PBXTargetDependency */,
+				9895948E1DC73A1D00AF6AFA /* PBXTargetDependency */,
+			);
+			name = ShareVK;
+			productName = ShareVK;
+			productReference = 984AA0C71DC2DB640039E04E /* ShareVK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		984AA0D71DC2DB640039E04E /* ShareVKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 984AA0EF1DC2DB640039E04E /* Build configuration list for PBXNativeTarget "ShareVKTests" */;
+			buildPhases = (
+				984AA0D41DC2DB640039E04E /* Sources */,
+				984AA0D51DC2DB640039E04E /* Frameworks */,
+				984AA0D61DC2DB640039E04E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				984AA0DA1DC2DB640039E04E /* PBXTargetDependency */,
+			);
+			name = ShareVKTests;
+			productName = ShareVKTests;
+			productReference = 984AA0D81DC2DB640039E04E /* ShareVKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		984AA0E21DC2DB640039E04E /* ShareVKUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 984AA0F21DC2DB640039E04E /* Build configuration list for PBXNativeTarget "ShareVKUITests" */;
+			buildPhases = (
+				984AA0DF1DC2DB640039E04E /* Sources */,
+				984AA0E01DC2DB640039E04E /* Frameworks */,
+				984AA0E11DC2DB640039E04E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				984AA0E51DC2DB640039E04E /* PBXTargetDependency */,
+			);
+			name = ShareVKUITests;
+			productName = ShareVKUITests;
+			productReference = 984AA0E31DC2DB640039E04E /* ShareVKUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		989594801DC73A1D00AF6AFA /* ShareToVK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 989594951DC73A1D00AF6AFA /* Build configuration list for PBXNativeTarget "ShareToVK" */;
+			buildPhases = (
+				9895947D1DC73A1D00AF6AFA /* Sources */,
+				9895947E1DC73A1D00AF6AFA /* Frameworks */,
+				9895947F1DC73A1D00AF6AFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareToVK;
+			productName = ShareToVK;
+			productReference = 989594811DC73A1D00AF6AFA /* ShareToVK.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		984AA0BF1DC2DB640039E04E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Анатолий Шулика";
+				TargetAttributes = {
+					984AA0C61DC2DB640039E04E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = RK4QTTGSRH;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					984AA0D71DC2DB640039E04E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = RK4QTTGSRH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 984AA0C61DC2DB640039E04E;
+					};
+					984AA0E21DC2DB640039E04E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = RK4QTTGSRH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 984AA0C61DC2DB640039E04E;
+					};
+					989594801DC73A1D00AF6AFA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = RK4QTTGSRH;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 984AA0C21DC2DB640039E04E /* Build configuration list for PBXProject "ShareVK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 984AA0BE1DC2DB640039E04E;
+			productRefGroup = 984AA0C81DC2DB640039E04E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 984AA0F61DC2DC1E0039E04E /* Products */;
+					ProjectRef = 984AA0F51DC2DC1E0039E04E /* SwiftyVK.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				984AA0C61DC2DB640039E04E /* ShareVK */,
+				984AA0D71DC2DB640039E04E /* ShareVKTests */,
+				984AA0E21DC2DB640039E04E /* ShareVKUITests */,
+				989594801DC73A1D00AF6AFA /* ShareToVK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		984AA0FD1DC2DC1E0039E04E /* SwiftyVK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyVK.framework;
+			remoteRef = 984AA0FC1DC2DC1E0039E04E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		984AA0FF1DC2DC1E0039E04E /* SwiftyVK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyVK.framework;
+			remoteRef = 984AA0FE1DC2DC1E0039E04E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		984AA1011DC2DC1E0039E04E /* SwiftyVKResources-OSX.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyVKResources-OSX.bundle";
+			remoteRef = 984AA1001DC2DC1E0039E04E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		984AA1031DC2DC1E0039E04E /* SwiftyVKResources-iOS.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyVKResources-iOS.bundle";
+			remoteRef = 984AA1021DC2DC1E0039E04E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		984AA0C51DC2DB640039E04E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984AA0CF1DC2DB640039E04E /* Assets.xcassets in Resources */,
+				984AA0D21DC2DB640039E04E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984AA0D61DC2DB640039E04E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984AA0E11DC2DB640039E04E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9895947F1DC73A1D00AF6AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984DFD271DD8E64F004B7584 /* musicLogo.png in Resources */,
+				984DFD2C1DD8F864004B7584 /* gifLogo.png in Resources */,
+				9813DA4B1DCB069B00CF8947 /* bgcolor.png in Resources */,
+				9849B83B1DD7939300BD654A /* docLogo.png in Resources */,
+				9895948B1DC73A1D00AF6AFA /* ShareViewController.xib in Resources */,
+				98663F981DD5664D00E27325 /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		984AA0C31DC2DB640039E04E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984AA10A1DC2DCBA0039E04E /* VKDelegation.swift in Sources */,
+				984AA0CD1DC2DB640039E04E /* ViewController.swift in Sources */,
+				98E58E431DCB1B0200F7749C /* ShareViewController.swift in Sources */,
+				984AA0CB1DC2DB640039E04E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984AA0D41DC2DB640039E04E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984AA0DD1DC2DB640039E04E /* ShareVKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		984AA0DF1DC2DB640039E04E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984AA0E81DC2DB640039E04E /* ShareVKUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9895947D1DC73A1D00AF6AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989594981DC73A8800AF6AFA /* VKDelegation.swift in Sources */,
+				989594881DC73A1D00AF6AFA /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		984AA0DA1DC2DB640039E04E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 984AA0C61DC2DB640039E04E /* ShareVK */;
+			targetProxy = 984AA0D91DC2DB640039E04E /* PBXContainerItemProxy */;
+		};
+		984AA0E51DC2DB640039E04E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 984AA0C61DC2DB640039E04E /* ShareVK */;
+			targetProxy = 984AA0E41DC2DB640039E04E /* PBXContainerItemProxy */;
+		};
+		984AA1071DC2DC4D0039E04E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyVK-OSX";
+			targetProxy = 984AA1061DC2DC4D0039E04E /* PBXContainerItemProxy */;
+		};
+		9895948E1DC73A1D00AF6AFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 989594801DC73A1D00AF6AFA /* ShareToVK */;
+			targetProxy = 9895948D1DC73A1D00AF6AFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		984AA0D01DC2DB640039E04E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				984AA0D11DC2DB640039E04E /* Base */,
+				98663F9A1DD569DA00E27325 /* ru */,
+				98663F9C1DD569EA00E27325 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		989594891DC73A1D00AF6AFA /* ShareViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9895948A1DC73A1D00AF6AFA /* Base */,
+				9813DA461DC8FCE900CF8947 /* ru */,
+				9813DA481DC8FD1500CF8947 /* en */,
+			);
+			name = ShareViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		984AA0EA1DC2DB640039E04E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		984AA0EB1DC2DB640039E04E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		984AA0ED1DC2DB640039E04E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShareVK/ShareVK.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RK4QTTGSRH;
+				INFOPLIST_FILE = ShareVK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.t01ik.ShareVK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		984AA0EE1DC2DB640039E04E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ShareVK/ShareVK.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RK4QTTGSRH;
+				INFOPLIST_FILE = ShareVK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.t01ik.ShareVK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		984AA0F01DC2DB640039E04E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RK4QTTGSRH;
+				INFOPLIST_FILE = ShareVKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.t01ik.ShareVKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareVK.app/Contents/MacOS/ShareVK";
+			};
+			name = Debug;
+		};
+		984AA0F11DC2DB640039E04E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RK4QTTGSRH;
+				INFOPLIST_FILE = ShareVKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.t01ik.ShareVKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareVK.app/Contents/MacOS/ShareVK";
+			};
+			name = Release;
+		};
+		984AA0F31DC2DB640039E04E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RK4QTTGSRH;
+				INFOPLIST_FILE = ShareVKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.t01ik.ShareVKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ShareVK;
+			};
+			name = Debug;
+		};
+		984AA0F41DC2DB640039E04E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RK4QTTGSRH;
+				INFOPLIST_FILE = ShareVKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.t01ik.ShareVKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ShareVK;
+			};
+			name = Release;
+		};
+		989594901DC73A1D00AF6AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = ShareToVK/ShareToVK.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RK4QTTGSRH;
+				INFOPLIST_FILE = ShareToVK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.t01ik.ShareVK.ShareToVK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		989594911DC73A1D00AF6AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = ShareToVK/ShareToVK.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RK4QTTGSRH;
+				INFOPLIST_FILE = ShareToVK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.t01ik.ShareVK.ShareToVK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		984AA0C21DC2DB640039E04E /* Build configuration list for PBXProject "ShareVK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984AA0EA1DC2DB640039E04E /* Debug */,
+				984AA0EB1DC2DB640039E04E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		984AA0EC1DC2DB640039E04E /* Build configuration list for PBXNativeTarget "ShareVK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984AA0ED1DC2DB640039E04E /* Debug */,
+				984AA0EE1DC2DB640039E04E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		984AA0EF1DC2DB640039E04E /* Build configuration list for PBXNativeTarget "ShareVKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984AA0F01DC2DB640039E04E /* Debug */,
+				984AA0F11DC2DB640039E04E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		984AA0F21DC2DB640039E04E /* Build configuration list for PBXNativeTarget "ShareVKUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984AA0F31DC2DB640039E04E /* Debug */,
+				984AA0F41DC2DB640039E04E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		989594951DC73A1D00AF6AFA /* Build configuration list for PBXNativeTarget "ShareToVK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989594901DC73A1D00AF6AFA /* Debug */,
+				989594911DC73A1D00AF6AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 984AA0BF1DC2DB640039E04E /* Project object */;
+}
