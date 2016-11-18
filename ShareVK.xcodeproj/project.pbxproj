@@ -21,6 +21,7 @@
 		984DFD271DD8E64F004B7584 /* musicLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 984DFD261DD8E64F004B7584 /* musicLogo.png */; };
 		984DFD2C1DD8F864004B7584 /* gifLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 984DFD2B1DD8F864004B7584 /* gifLogo.png */; };
 		98663F981DD5664D00E27325 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 98663F971DD5664D00E27325 /* icon.icns */; };
+		9868CAB01DDD990E00DCCAD4 /* videoLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9868CAAF1DDD990E00DCCAD4 /* videoLogo.png */; };
 		989594881DC73A1D00AF6AFA /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989594871DC73A1D00AF6AFA /* ShareViewController.swift */; };
 		9895948B1DC73A1D00AF6AFA /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 989594891DC73A1D00AF6AFA /* ShareViewController.xib */; };
 		9895948F1DC73A1D00AF6AFA /* ShareToVK.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 989594811DC73A1D00AF6AFA /* ShareToVK.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -138,6 +139,7 @@
 		98663F971DD5664D00E27325 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		98663F9A1DD569DA00E27325 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		98663F9C1DD569EA00E27325 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		9868CAAF1DDD990E00DCCAD4 /* videoLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = videoLogo.png; sourceTree = "<group>"; };
 		989594811DC73A1D00AF6AFA /* ShareToVK.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareToVK.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		989594861DC73A1D00AF6AFA /* ShareToVK.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareToVK.entitlements; sourceTree = "<group>"; };
 		989594871DC73A1D00AF6AFA /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				98663F971DD5664D00E27325 /* icon.icns */,
 				9813DA4A1DCB069B00CF8947 /* bgcolor.png */,
 				984DFD261DD8E64F004B7584 /* musicLogo.png */,
+				9868CAAF1DDD990E00DCCAD4 /* videoLogo.png */,
 				984DFD2B1DD8F864004B7584 /* gifLogo.png */,
 				9849B83A1DD7939300BD654A /* docLogo.png */,
 				989594861DC73A1D00AF6AFA /* ShareToVK.entitlements */,
@@ -486,6 +489,7 @@
 				984DFD2C1DD8F864004B7584 /* gifLogo.png in Resources */,
 				9813DA4B1DCB069B00CF8947 /* bgcolor.png in Resources */,
 				9849B83B1DD7939300BD654A /* docLogo.png in Resources */,
+				9868CAB01DDD990E00DCCAD4 /* videoLogo.png in Resources */,
 				9895948B1DC73A1D00AF6AFA /* ShareViewController.xib in Resources */,
 				98663F981DD5664D00E27325 /* icon.icns in Resources */,
 			);

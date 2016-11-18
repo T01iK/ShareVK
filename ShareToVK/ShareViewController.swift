@@ -13,9 +13,12 @@ import Social
 class ConversationList {
     var IDs = [String]()
     var isConference = [Bool]()
+    var isGroup = [Bool]()
     var names = [String]()
     var conversationsCount = Int()
     var withoutNames = String()
+    var groupsWithoutNames = String()
+    
 }
 
 class GroupsList {
@@ -33,6 +36,7 @@ var attachmentsCount = 0
 var attachmentsFinalString = ""
 var attachmentFileURL = ""
 var attachmentFileName = ""
+var attachmentFileNameWithoutExt = ""
 var attachmentFileExt = ""
 var attachmentsStrings = [String]()
 var isCanceled = Bool()
@@ -57,6 +61,10 @@ class ShareViewController: NSViewController {
         VK.logIn()
         conversations.IDs.removeAll()
         conversations.names.removeAll()
+        conversations.isConference.removeAll()
+        conversations.isGroup.removeAll()
+        conversations.groupsWithoutNames = ""
+        conversations.withoutNames = ""
         groups.IDs.removeAll()
         groups.names.removeAll()
         attachmentsStrings.removeAll()
@@ -100,28 +108,57 @@ class ShareViewController: NSViewController {
                 self.toSwitch.isEnabled = false
                 if response["items"][currentConversation, "message", "chat_id"] != nil {
                     conversations.isConference.append(true)
+                    conversations.isGroup.append(false)
                     conversations.IDs.append(String(response["items"][currentConversation, "message", "chat_id"].intValue))
                     conversations.names.append(response["items"][currentConversation, "message", "title"].string!)
                 }
                 else {
                     conversations.isConference.append(false)
                     conversations.IDs.append(String(response["items"][currentConversation, "message", "user_id"].intValue))
-                    conversations.names.append("")
-                    if conversations.withoutNames == "" {
-                        conversations.withoutNames = conversations.IDs[currentConversation]
+                    if conversations.IDs[currentConversation].contains("-") {
+                        conversations.isGroup.append(true)
                     }
-                    else {
-                        conversations.withoutNames = conversations.withoutNames + "," + conversations.IDs[currentConversation]
+                    else { conversations.isGroup.append(false) }
+                    conversations.names.append("")
+                    if conversations.isGroup[currentConversation] == false {
+                        if conversations.withoutNames == "" {
+                            conversations.withoutNames = conversations.IDs[currentConversation]
+                        }
+                        else {
+                            conversations.withoutNames = conversations.withoutNames + "," + conversations.IDs[currentConversation]
+                        }
+                    }
+                    if conversations.isGroup[currentConversation] == true {
+                        var groupID = conversations.IDs[currentConversation]
+                        groupID.remove(at: groupID.startIndex)
+                        if conversations.groupsWithoutNames == "" {
+                            conversations.groupsWithoutNames = groupID
+                        }
+                        else {
+                            conversations.groupsWithoutNames = conversations.groupsWithoutNames + "," + groupID
+                        }
                     }
                 }
                 
             }
-            let requestUserInfo = VK.API.Users.get([VK.Arg.userIDs : conversations.withoutNames])
+            let requestUserInfo = VK.API.Groups.getById([VK.Arg.groupIds : conversations.groupsWithoutNames])
             requestUserInfo.successBlock = { response in
                 var currentItem = 0
                 for currentConversation in 0...conversations.conversationsCount-1 {
-                    if conversations.isConference[currentConversation] == false {
-                        print(response[currentItem, "first_name"].string! + " " + response[currentItem, "last_name"].string!)
+                    if conversations.isGroup[currentConversation] == true {
+                        conversations.names[currentConversation] = response[currentItem, "name"].string!
+                        currentItem = currentItem + 1
+                    }
+                }
+            }
+            requestUserInfo.asynchronous = false
+            requestUserInfo.send()
+            
+            let requestGroupsInfo = VK.API.Users.get([VK.Arg.userIDs : conversations.withoutNames])
+            requestGroupsInfo.successBlock = { response in
+                var currentItem = 0
+                for currentConversation in 0...conversations.conversationsCount-1 {
+                    if conversations.isConference[currentConversation] == false && conversations.isGroup[currentConversation] == false {
                         conversations.names[currentConversation] = response[currentItem, "first_name"].string! + " " + response[currentItem, "last_name"].string!
                         currentItem = currentItem + 1
                     }
@@ -131,8 +168,8 @@ class ShareViewController: NSViewController {
                 })
                 
             }
-            requestUserInfo.asynchronous = false
-            requestUserInfo.send()
+            requestGroupsInfo.asynchronous = false
+            requestGroupsInfo.send()
             
             if self.audienceSwitch.indexOfSelectedItem == 1 {
                 self.toSwitch.addItems(withTitles: groups.names)
@@ -166,8 +203,9 @@ class ShareViewController: NSViewController {
                         if (shareURL.absoluteString?.contains("file"))! {
                             attachmentFileURL = shareURL.absoluteString!
                             attachmentFileName = String((URL(string: String(attachmentFileURL)!)!.standardizedFileURL.lastPathComponent))
+                            attachmentFileNameWithoutExt = self.removeExtensionFromFilename(file: attachmentFileName)
                             attachmentFileExt = String((URL(string: String(attachmentFileURL)!)!.standardizedFileURL.pathExtension))
-                            if attachmentFileExt != "" && attachmentFileExt != "mp3" && attachmentFileExt != "gif" && attachmentFileExt != "png" && attachmentFileExt != "jpg" && attachmentFileExt != "jpeg" {
+                            if attachmentFileExt != "" && attachmentFileExt != "mp3" && attachmentFileExt != "gif" && attachmentFileExt != "png" && attachmentFileExt != "jpg" && attachmentFileExt != "jpeg" && attachmentFileExt != "3gp" && attachmentFileExt != "avi" && attachmentFileExt != "flv" && attachmentFileExt != "mov" && attachmentFileExt != "mp4" && attachmentFileExt != "mpg" && attachmentFileExt != "mpeg" && attachmentFileExt != "wmv" {
                                     print("FOUND SOME FILE")
                                     var attachmentRelativePath = URL(fileURLWithPath: attachmentFileURL).relativePath
                                     let title = attachmentFileName
@@ -370,7 +408,62 @@ class ShareViewController: NSViewController {
                     }
                 })
             }
-
+            if attachment.hasItemConformingToTypeIdentifier("public.3gpp") || attachment.hasItemConformingToTypeIdentifier("public.avi") || attachment.hasItemConformingToTypeIdentifier("com.adobe.flash.video") || attachment.hasItemConformingToTypeIdentifier("com.apple.quicktime-movie") || attachment.hasItemConformingToTypeIdentifier("public.mpeg-4") || attachment.hasItemConformingToTypeIdentifier("public.mpeg") || attachment.hasItemConformingToTypeIdentifier("com.microsoft.windows-media-wmv") {
+                if attachment.hasItemConformingToTypeIdentifier("public.3gpp") { typeID = "public.3gpp" }
+                if attachment.hasItemConformingToTypeIdentifier("public.avi") { typeID = "public.avi" }
+                if attachment.hasItemConformingToTypeIdentifier("com.adobe.flash.video") { typeID = "com.adobe.flash.video" }
+                if attachment.hasItemConformingToTypeIdentifier("com.apple.quicktime-movie") { typeID = "com.apple.quicktime-movie" }
+                if attachment.hasItemConformingToTypeIdentifier("public.mpeg-4") { typeID = "public.mpeg-4" }
+                if attachment.hasItemConformingToTypeIdentifier("public.mpeg") { typeID = "public.mpeg" }
+                if attachment.hasItemConformingToTypeIdentifier("com.microsoft.windows-media-wmv") { typeID = "com.microsoft.windows-media-wmv" }
+                
+                attachment.loadItem(forTypeIdentifier: typeID, options: nil, completionHandler: { (video, error) in
+                    if let shareVideoData = video as? Data {
+                        let title = attachmentFileNameWithoutExt
+                        DispatchQueue.main.async(execute: {
+                            let previewImage = NSImageView()
+                            previewImage.frame = CGRect(x: 17 + numberOfPreviews * 52, y: 78, width: 50, height: 50)
+                            previewImage.imageFrameStyle = .grayBezel
+                            previewImage.image = #imageLiteral(resourceName: "videoLogo.png")
+                            self.view.addSubview(previewImage)
+                            let uploadProgressBar = NSProgressIndicator()
+                            uploadProgressBar.frame = CGRect(x: 20 + numberOfPreviews * 52, y: 74, width: 44, height: 20)
+                            uploadProgressBar.controlSize = .regular
+                            self.view.addSubview(uploadProgressBar)
+                            uploadProgressBar.isIndeterminate = false
+                            uploadProgressBar.doubleValue = 0
+                            uploadProgressBar.layer?.zPosition = 1
+                            
+                            numberOfPreviews = numberOfPreviews + 1
+                            
+                            let uploadVideo = VK.API.Upload.Video.fromFile(Media(videoData: shareVideoData), name: title)
+                            uploadVideo.progressBlock = {done, total in
+                                NotificationCenter.default.addObserver(self, selector: #selector(ShareViewController.userCanceled), name: NSNotification.Name(rawValue: "CancelUpload"), object: nil)
+                                if isCanceled == true { uploadVideo.cancel() }
+                                DispatchQueue.main.async(execute: {
+                                    uploadProgressBar.isHidden = false
+                                    self.sendButton.isEnabled = false
+                                    uploadProgressBar.maxValue = Double(total)
+                                    uploadProgressBar.doubleValue = Double(done)
+                                })
+                            }
+                            uploadVideo.successBlock = {response in
+                                if uploadVideo.cancelled == false {
+                                    DispatchQueue.main.async(execute: {
+                                        uploadProgressBar.isHidden = true
+                                        self.sendButton.isEnabled = true
+                                    })
+                                    print(response)
+                                    attachmentsStrings.append("video" + currentUserID + "_" + String(response["video_id"].intValue))
+                                }
+                            }
+                            uploadVideo.errorBlock = {error in print("SwiftyVK: uploadVideo fail \n \(error)")}
+                            uploadVideo.send()
+                            
+                        })
+                    }
+                })
+            }
         }
     }
 
@@ -416,6 +509,7 @@ class ShareViewController: NSViewController {
 }
 
     @IBAction func cancel(_ sender: AnyObject?) {
+        for currentAttachment in 0...attachmentsStrings.count-1 { deleteItemFromServer(itemString: attachmentsStrings[currentAttachment]) }
         NotificationCenter.default.post(name: Notification.Name(rawValue: "CancelUpload"), object: nil)
         let cancelError = NSError(domain: NSCocoaErrorDomain, code: NSUserCancelledError, userInfo: nil)
         self.extensionContext!.cancelRequest(withError: cancelError)
@@ -474,6 +568,73 @@ class ShareViewController: NSViewController {
     
     func userCanceled() {
         isCanceled = true
+    }
+    
+    func deleteItemFromServer(itemString: String) {
+        if itemString.contains("doc") {
+            var docString = itemString
+            var count = 0
+            docString.removeSubrange(docString.startIndex..<docString.index(docString.startIndex, offsetBy: 3))
+            for currentCharacter in docString.characters {
+                if currentCharacter == "_" {
+                    break
+                }
+                count = count+1
+            }
+            var ownerID = docString
+            var docID = docString
+            ownerID.removeSubrange(ownerID.index(ownerID.startIndex, offsetBy: count)..<ownerID.endIndex)
+            docID.removeSubrange(docID.startIndex..<docID.index(docID.startIndex, offsetBy: count+1))
+            let deleteDoc = VK.API.Docs.delete([VK.Arg.ownerId : ownerID, VK.Arg.docId : docID])
+            deleteDoc.send()
+        }
+        if itemString.contains("audio") {
+            var audioString = itemString
+            var count = 0
+            audioString.removeSubrange(audioString.startIndex..<audioString.index(audioString.startIndex, offsetBy: 5))
+            for currentCharacter in audioString.characters {
+                if currentCharacter == "_" {
+                    break
+                }
+                count = count+1
+            }
+            var ownerID = audioString
+            var audioID = audioString
+            ownerID.removeSubrange(ownerID.index(ownerID.startIndex, offsetBy: count)..<ownerID.endIndex)
+            audioID.removeSubrange(audioID.startIndex..<audioID.index(audioID.startIndex, offsetBy: count+1))
+            let deleteAudio = VK.API.Audio.delete([VK.Arg.ownerId : ownerID, VK.Arg.audioId : audioID])
+            deleteAudio.send()
+        }
+        if itemString.contains("video") {
+            var videoString = itemString
+            var count = 0
+            videoString.removeSubrange(videoString.startIndex..<videoString.index(videoString.startIndex, offsetBy: 5))
+            for currentCharacter in videoString.characters {
+                if currentCharacter == "_" {
+                    break
+                }
+                count = count+1
+            }
+            var ownerID = videoString
+            var videoID = videoString
+            ownerID.removeSubrange(ownerID.index(ownerID.startIndex, offsetBy: count)..<ownerID.endIndex)
+            videoID.removeSubrange(videoID.startIndex..<videoID.index(videoID.startIndex, offsetBy: count+1))
+            let deleteVideo = VK.API.Video.delete([VK.Arg.ownerId : ownerID, VK.Arg.videoId : videoID])
+            deleteVideo.send()
+        }
+    }
+    
+    func removeExtensionFromFilename(file: String) -> String {
+        var filename = file
+        var count = 0
+        for currentCharacter in filename.characters.reversed() {
+            if currentCharacter == "." {
+                break
+            }
+            count = count + 1
+        }
+        filename.removeSubrange(filename.index(filename.endIndex, offsetBy: -count-1)..<filename.endIndex)
+        return filename
     }
     
 

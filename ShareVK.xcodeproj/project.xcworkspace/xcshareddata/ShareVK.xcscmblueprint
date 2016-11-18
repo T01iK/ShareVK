@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9FEF8DF27D621B5481ACE6274E60A7587BD35ED0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CE7B9BF920F64F7D2242DD0AD95CD16EB248D91A" : 9223372036854775807,
+    "9FEF8DF27D621B5481ACE6274E60A7587BD35ED0" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6344583F-756F-4861-80DA-29288B019C30",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CE7B9BF920F64F7D2242DD0AD95CD16EB248D91A" : "SwiftyVK\/",
+    "9FEF8DF27D621B5481ACE6274E60A7587BD35ED0" : "ShareVK\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ShareVK",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ShareVK.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/T01iK\/ShareVK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9FEF8DF27D621B5481ACE6274E60A7587BD35ED0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/WE-St0r\/SwiftyVK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CE7B9BF920F64F7D2242DD0AD95CD16EB248D91A"
+    }
+  ]
+}
