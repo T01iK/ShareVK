@@ -776,6 +776,7 @@
 		989594901DC73A1D00AF6AFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = ShareToVK/ShareToVK.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -793,6 +794,7 @@
 		989594911DC73A1D00AF6AFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_ENTITLEMENTS = ShareToVK/ShareToVK.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
